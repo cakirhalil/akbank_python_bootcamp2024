@@ -36,3 +36,6 @@ class Library:
                 self.file.write(line)
 
         print(f"'{title_to_remove}' kitabı listeden silindiii")
+
+
+lib = Library()
