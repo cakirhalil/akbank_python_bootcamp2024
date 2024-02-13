@@ -39,3 +39,25 @@ class Library:
 
 
 lib = Library()
+
+while True:
+    print("-----------------------")
+    print("------- M E N U -------")
+    print("-----------------------")
+    print("1) Kitapları listeleme")
+    print("2) Kitap ekleme")
+    print("3) Kitap silme")
+    print("q) Çıkış yapma")
+    option = input("Lütfen seçiminizi girin: ")
+
+
+    if option == '1':
+        lib.list_books()
+    elif option == '2':
+        lib.add_book()
+    elif option == '3':
+        lib.remove_book()
+    elif option.lower() == 'q':
+        break
+    else:
+        print("Lütfen belirtilen şeçenekleri kullanınız.")
